@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organigramer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-grey-300 font-sans leading-normal tracking-normal">
+
+    <div class="flex flex-col md:flex-row md:min-h-screen">
+
+        <nav class="bg-blue-600 md:w-52 md:min-h-screen py-6 px-4 text-white">
+            <div class="mb-10">
+                <span class="font-extrabold uppercase text-xl tracking-tight">Organigramer</span>
+            </div>
+            <div class="flex flex-col">
+                <a href="index.html" class="font-semibold block py-2 px-4 text-sm text-gray-200 hover:text-white hover:underline hover:underline-offset-2">Accueil</a>
+                <a href="insert.html" class="font-semibold block py-2 px-4 text-sm text-gray-200 hover:text-white hover:underline hover:underline-offset-2">Inserer nouveau role</a>
+                <a href="delete.html" class="font-semibold block py-2 px-4 text-sm text-gray-200 hover:text-white hover:underline hover:underline-offset-2">Supprimer role</a>
+            </div>            
+        </nav>
+
+        <div class="md:flex-1">
+            <header class="bg-white p-6">
+                <div class="container mx-auto flex items-center justify-between">
+                    <h1 class="text-4xl uppercase font-bold text-blue-500">V&ocirc;tre organigrame ici!</h1>
+                </div>
+            </header>
+
+            <main class="container mx-auto py-8">
+                <section class="bg-white border-b py-8">
+                    <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+                        <div class="w-full md:w-1/2 px-4 flex flex-col items-center">
+                            <h2 class="text-3xl text-blue-500 font-bold mb-4">Modifier</h2>
+                            <article class="flex flex-wrap">
+                                <section class="m-2 p-4 border rounded-lg shadow-lg">
+                                        <form action="" method="get">
+                                            <label class="font-semibold text-gray-800 mb-3">Nouveau role</label>
+                                            <input class="block w-full bg-white border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:border-blue-500 mb-2 placeholder-blue-300" type="text" placeholder="Nouveau role">
+                                            <label class="font-semibold text-gray-800 mb-3">Niveau Hi&eacute;rarchique</label>
+                                            <input class="block w-full bg-white border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:border-blue-500 mb-2 placeholder-blue-300" type="number" placeholder="Niveau Hierarchique">
+                                            <label class="font-semibold text-gray-800 mb-3">D&eacute;partement</label>
+                                            <select class="block w-full bg-white border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:border-blue-500 mb-2">
+                                                <option value="option1">Option 1</option>
+                                                <option value="option2">Option 2</option>
+                                                <option value="option3">Option 3</option>
+                                            </select>
+                                        </form>
+                                        <a href="result.html"><button class="bg-gray-800 border-b hover:bg-blue-500 text-white font-bold py-2 px-4 rounded">Confirmer</button></a>
+                                </section>  
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="text-gray-800 p-6">
+                <div class="container mx-auto">
+                    <p class="text-sm">&copy; 2024 Gestion. All Rights Reserved to ETU2876</p>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
