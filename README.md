@@ -111,15 +111,13 @@ To do list:
   Page delete
     -front
       -form
-        text role
-        number niveau
-        select department
+        select role
       -button "confirm"
     -database
       -table role
     -function
     -integration
-      -send info to treatment_insert w (id_role,niveau & department
+      -send info to treatment_insert w (id_role,niveau & department)
 
   treatment_delete
     -front
@@ -133,7 +131,7 @@ To do list:
           "DELETE row FROM employe WHERE niveau="+(niveau+i)
           "DELETE row FROM role WHERE niveau="+(niveau+i)
           if department!="high management"
-            "DELETE row FROM role WHERE niveau="+niveau+i AND department=department
+            "DELETE row FROM role WHERE niveau="+niveau+i AND department=department"
         }
       }
     -integration
